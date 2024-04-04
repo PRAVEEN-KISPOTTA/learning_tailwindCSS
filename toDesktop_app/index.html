@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a91bf7896.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="output.css">
     <title>Tailwind css</title>
 </head>
@@ -13,6 +14,50 @@
             <img src="./assets/asset 0.png" alt="logo" class="object-cover max-w-12 max-h-12">
             <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
+
+        <div id="navMenu" class="font-medium hover:text-primary hidden md:flex gap-12">
+            <a href="#">Pricing</a>
+            <a href="#">Docs</a>
+            <a href="#">Changelog</a>
+            <a href="#">Blog</a>
+            <a href="#">Login</a>
+        </div>
+
+        <button class="hidden md:flex items-center gap-2 border border-gray-400 hover:border-gray-600 rounded-lg px-6 py-2 ">
+            <img src="./assets/asset 1.svg" alt="">
+            <span>Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars" class="text-gray-600"></i>
+        </button>
+
+        <div id="subNavBar" class="fixed bg-white inset-0">
+            <div id="nav-bar" class="p-3 flex justify-between items-center">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img src="./assets/asset 0.png" alt="logo" class="object-cover max-w-12 max-h-12">
+                    <span class="text-lg font-medium font-display">ToDesktop</span>
+                </a>
+                <button class="p-2">
+                    <i class="fa-solid fa-xmark" class="h-6 w-6" onclick="closeMenu()"></i>
+                </button>
+            </div>
+
+            <div class="p-3 flex flex-col gap-y-3 text-md font-medium">
+                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Pricing</a>
+                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Docs</a>
+                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Changelog</a>
+                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Blog</a>
+                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Login</a>
+
+                <button class="flex px-3 py-5">
+                    <img src="./assets/asset 1.svg" alt="">
+                    <span>Electron Developer</span>
+                </button>
+            </div>
+        </div>
     </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
