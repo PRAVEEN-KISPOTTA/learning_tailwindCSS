@@ -29,34 +29,59 @@
             <i class="fa-solid fa-arrow-right"></i>
         </button>
         <button class="p-2 md:hidden" onclick="handleMenu()">
-            <i class="fa-solid fa-bars" class="text-gray-600"></i>
+            <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
 
-        <div id="subNavBar" class="fixed bg-white inset-0 ">
+        <div id="subNavBar" class="fixed bg-white inset-0 hidden">
             <div id="nav-bar" class="p-3 flex justify-between items-center">
                 <a href="#" id="brand" class="flex gap-2 items-center">
                     <img src="./assets/asset 0.png" alt="logo" class="object-cover max-w-12 max-h-12">
                     <span class="text-lg font-medium font-display">ToDesktop</span>
                 </a>
                 <button class="p-2">
-                    <i class="fa-solid fa-xmark" class="h-6 w-6" onclick="handleMenu()"></i>
+                    <i class="fa-solid fa-xmark h-6 w-6" onclick="handleMenu()"></i>
                 </button>
             </div>
 
-            <div class="p-3 flex flex-col gap-y-3 text-md font-medium">
-                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Pricing</a>
-                <a href="#" class="bg-gray-400/10 px-3 py-3 rounded-lg">Docs</a>
-                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Changelog</a>
-                <a href="#" class="hover:bg-gray-400/10 px-3 py-3 rounded-lg">Blog</a>
-                <a href="#" class="bg-primary px-3 py-3 rounded-lg">Login</a>
+            <div class=" flex flex-col font-medium mt-6">
+                <a href="#" class="hover:bg-pix transition duration-500 ease-in-out m-2 p-3 rounded-lg">Pricing</a>
+                <a href="#" class="hover:bg-pix transition duration-500 ease-in-out m-2 p-3 rounded-lg">Docs</a>
+                <a href="#" class="hover:bg-pix transition duration-500 ease-in-out m-2 p-3 rounded-lg">Changelog</a>
+                <a href="#" class="hover:bg-pix transition duration-500 ease-in-out m-2 p-3 rounded-lg">Blog</a>
+                <a href="#" class="hover:bg-pix transition duration-500 ease-in-out m-2 p-3 rounded-lg">Login</a>
+                <a href="#" class="inline-block hover:bg-blue-500 hover:bg-blue-700/80 transition duration-500 ease-in-out transform hover:scale-110 px-3 py-3 rounded-lg">Hover Me</a>
 
-                <button class="flex px-3 py-5">
+
+                <button class="flex m-2 p-3 gap-2">
                     <img src="./assets/asset 1.svg" alt="">
                     <span>Electron Developer</span>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero section -->
+        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
+                <div id="version-text" class="flex items-center my-6 gap-2 bg-yellow-100 border border-yellow-300 
+                px-3 py-1 rounded-lg w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+                    <p class="text-yellow-600 font-display font-medium">v0.21.1: <span class="text-yellow-800">Find-in-page bug fixes</span></p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+                </div>
+
+                <h1 class="text-5xl font-bold">Web app to desktop app in minutes</h1>
+                <p class="text-gray-600 my-6">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+
+                <div id="buttons-container" class="flex flex-col my-4">
+                    <button class="bg-blue-800 text-white rounded-md p-2">Download Now</button>
+                    <button class="border border-gray-600 bg-white text-white rounded-md p-2 my-2">Read Docs</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
