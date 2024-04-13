@@ -776,6 +776,10 @@ h1, h2, h3 {
   max-width: 48rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -898,6 +902,14 @@ h1, h2, h3 {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -1085,6 +1097,14 @@ h1, h2, h3 {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .font-display {
@@ -1391,5 +1411,9 @@ h1, h2, h3 {
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .lg\:text-\[16px\] {
+    font-size: 16px;
   }
 }
