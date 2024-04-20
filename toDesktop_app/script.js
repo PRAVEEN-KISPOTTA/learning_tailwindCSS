@@ -1,7 +1,8 @@
 isHidden = document.querySelector("#subNavBar");
 function handleMenu(){
     console.log("dropDown menu");
-    (isHidden.classList.contains("hidden")) ? isHidden.classList.remove("hidden") : isHidden.classList.add("hidden");
+    // (isHidden.classList.contains("hidden")) ? isHidden.classList.remove("hidden") : isHidden.classList.add("hidden");
+    isHidden.classList.toggle("hidden");
 }
 
 
@@ -12,6 +13,7 @@ const initialTranslateRTL = 36*4;
 function setupIntersectionObserver(element, isLeftToRight, speed){
     const intersectionCallBack = (entries)=>{
         const isIntersecting = entries[0].isIntersecting;
+        console.log(entries[0])
         console.log(element, isIntersecting);
 
         if(isIntersecting){
