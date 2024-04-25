@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="output.css">
     <title>Tailwind css</title>
 </head>
-<body class="overflow-x-hidden">
+<body>
     <!-- Navbar -->
     <nav class="px-6 py-5 lg:py-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
         <a href="#" id="brand" class="flex gap-2 items-center flex-1">
@@ -298,47 +298,121 @@
         </div>
 
         <!-- step-by-step -->
-        <div id="steps" class="px-8 max-w-7xl mt-16 mx-auto lg:px-1 lg:mt-32">
-            <h2 class="text-5xl text-black sm:font-semibold mb-14">How it works</h2>
-            <div class="rounded-xl border pl-14 flex flex-col lg:flex-row justify-between gap-16 bg-gray-50 overflow-hidde">
-                <div id="left-side" class="flex flex-col gap-6 border pt-14 pb-28">
+        <div id="steps" class="flex flex-col gap-8 px-8 max-w-7xl mt-32 mx-auto lg:px-1">
+            <h2 class="text-5xl text-black sm:font-semibold mb-7">How it works</h2>
+            <div id="step-1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row bg-gray-50 items-center lg:justify-between">
+                <div id="left-side" class="flex flex-col gap-6 lg:w-1/2">
                     <span class="bg-yellow-100 border px-3 py-1 w-fit rounded-md mb-4">Step 1</span>
                     <h3 class="text-black font-semibold text-4xl">Bootstrap straight from your web app</h3>
                     <p class="text-lg text-gray-700">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
                     <ul class="grid grid-cols-2 gap-2 text-gray-700">
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Multiple windows</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Menubar/tray menus</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Offline support</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Customisable menus</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="text-lg">Launch on startup</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-check mr-3"></i>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check"></i>
                             <a href="" class="text-lg">Tabs (Mac only)</a>
                         </li>
                     </ul>
                 </div>
 
-                <div id="right-side" class="border lg:-mt-56 flex flex-col-reverse items-centre">
-                    <img class="" src="assets/asset 55.png" alt="">
-                    <div class="flex justify-center border items-center lg:absolute">
-                        <img class="" src="assets/asset 66.svg" alt="">
-                    </div>
+                <div id="right-side" class="pt-12">
+                    <img src="assets/asset 66.svg" alt="">
                 </div>
+                </div>
+
+                <div id="step-2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row bg-gray-50 items-center lg:justify-between">
+                    <div id="left-side" class="flex flex-col gap-6 lg:w-1/2">
+                        <span class="bg-yellow-100 border px-3 py-1 w-fit rounded-md mb-4">Step 2</span>
+                        <h3 class="text-black font-semibold text-4xl">Bootstrap straight from your web app</h3>
+                        <p class="text-lg text-gray-700">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+                        <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Multiple windows</a>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Menubar/tray menus</a>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Offline support</a>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Customisable menus</a>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="text-lg">Launch on startup</a>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check"></i>
+                                <a href="" class="text-lg">Tabs (Mac only)</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div id="right-side" class="pt-12">
+                        <img src="assets/asset 66.svg" alt="">
+                    </div>
+                    </div>
+
+                    <div id="step-3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row bg-gray-50 items-center lg:justify-between">
+                        <div id="left-side" class="flex flex-col gap-6 lg:w-1/2">
+                            <span class="bg-yellow-100 border px-3 py-1 w-fit rounded-md mb-4">Step 3</span>
+                            <h3 class="text-black font-semibold text-4xl">Bootstrap straight from your web app</h3>
+                            <p class="text-lg text-gray-700">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+                            <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Multiple windows</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Menubar/tray menus</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Offline support</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="border-b border-black border-opacity-30 hover:border-opacity-60 text-lg">Customisable menus</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="text-lg">Launch on startup</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="" class="text-lg">Tabs (Mac only)</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div id="right-side" class="pt-12">
+                            <img src="assets/asset 66.svg" alt="">
+                        </div>
+                        </div>
             </div>
         </div>
         <div class="h-[1000px]"></div>
