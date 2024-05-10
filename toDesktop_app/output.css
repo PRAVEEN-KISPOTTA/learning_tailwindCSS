@@ -1115,6 +1115,11 @@ h1, h2, h3 {
   padding-bottom: 2.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
