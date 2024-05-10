@@ -707,6 +707,14 @@ h1, h2, h3 {
   margin-top: 0.25rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1043,6 +1051,14 @@ h1, h2, h3 {
 
 .p-\[8px\] {
   padding: 8px;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
 }
 
 .px-10 {
@@ -1483,6 +1499,21 @@ h1, h2, h3 {
   .md\:min-w-32 {
     min-width: 8rem;
   }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1529,5 +1560,10 @@ h1, h2, h3 {
 
   .lg\:text-\[16px\] {
     font-size: 16px;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
