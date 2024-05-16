@@ -44,7 +44,9 @@ function setupIntersectionObserver(element, isLeftToRight, speed){
 const line1 = document.querySelector("#line1");
 const line2 = document.querySelector("#line2");
 const line3 = document.querySelector("#line3");
+const secondSlider = document.querySelector('#secondSlider');
 
 setupIntersectionObserver(line1, true, 0.15);
 setupIntersectionObserver(line2, false, 0.15);
 setupIntersectionObserver(line3, true, 0.15);
+setupIntersectionObserver(secondSlider, true, 0.35);
