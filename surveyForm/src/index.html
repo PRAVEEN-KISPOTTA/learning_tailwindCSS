@@ -1,78 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
-    <div id="main-container" class="p-4">
-        <div class="border flex flex-col gap-4 px-6">
-            <div>
-                <h2 class="text-4xl font-bold">Survey Form</h2>
-                <p>
-                    Feel Free To Answer The Questions Below Based On Your Own Experience 
-                    And Opinion. If You Are Not Convenient In Answering A Particular 
-                    Question Please Skip It By Answering "No". Every Answer Would Be Very 
-                    Appreciated. Thank You For Your Time.
-                </p>
-            </div>
-
-            <div>
-                <form action="" class="flex flex-col">
-                    <label for="userName">Your Name</label>
-                    <input type="text" id="userName" class="border py-2 rounded-md pl-3  hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your name">
-
-                    <label for="mailAddress">Your Email Address</label>
-                    <input type="email" id="mailAddress" class="border py-2 rounded-md pl-3  hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="user@user.com">
-
-                    <label for="phoneNum">Your Phone Number</label>
-                    <input type="tel" id="phoneNum" class="border py-2 rounded-md pl-3  hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="9999999999">
-
-                    <label for="state">Where Do You Live?</label>
-                    <select id="state" name="state" class="mt-1 block w-full pl-3 pr-10 py-2 text-base hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 border rounded-md">
-                        <option value="">Select a state</option>
-                        <option value="AP">Andhra Pradesh</option>
-                        <option value="AR">Arunachal Pradesh</option>
-                        <option value="AS">Assam</option>
-                        <option value="BR">Bihar</option>
-                        <option value="CT">Chhattisgarh</option>
-                        <option value="GA">Goa</option>
-                        <option value="GJ">Gujarat</option>
-                        <option value="HR">Haryana</option>
-                        <option value="HP">Himachal Pradesh</option>
-                        <option value="JK">Jammu and Kashmir</option>
-                        <option value="JH">Jharkhand</option>
-                        <option value="KA">Karnataka</option>
-                        <option value="KL">Kerala</option>
-                        <option value="MP">Madhya Pradesh</option>
-                        <option value="MH">Maharashtra</option>
-                        <option value="MN">Manipur</option>
-                        <option value="ML">Meghalaya</option>
-                        <option value="MZ">Mizoram</option>
-                        <option value="NL">Nagaland</option>
-                        <option value="OR">Odisha</option>
-                        <option value="PB">Punjab</option>
-                        <option value="RJ">Rajasthan</option>
-                        <option value="SK">Sikkim</option>
-                        <option value="TN">Tamil Nadu</option>
-                        <option value="TS">Telangana</option>
-                        <option value="TR">Tripura</option>
-                        <option value="UP">Uttar Pradesh</option>
-                        <option value="UT">Uttarakhand</option>
-                        <option value="WB">West Bengal</option>
-                        <option value="AN">Andaman and Nicobar Islands</option>
-                        <option value="CH">Chandigarh</option>
-                        <option value="DN">Dadra and Nagar Haveli</option>
-                        <option value="DD">Daman and Diu</option>
-                        <option value="LD">Lakshadweep</option>
-                        <option value="DL">Delhi</option>
-                        <option value="PY">Puducherry</option>
-                    </select>
-                </form>
-            </div>
+  </head>
+  <body>
+    <div id="main-container" class="p-4 bg-green-500">
+      <div class="border rounded-md flex flex-col gap-4 p-6 bg-slate-300">
+        <div>
+          <h2 class="text-4xl font-bold">Survey Form</h2>
+          <p>
+            Feel Free To Answer The Questions Below Based On Your Own Experience
+            And Opinion. If You Are Not Convenient In Answering A Particular
+            Question Please Skip It By Answering "No". Every Answer Would Be
+            Very Appreciated. Thank You For Your Time.
+          </p>
         </div>
+
+        <div>
+          <form action="" class="flex flex-col">
+            <label for="userName">Your Name</label>
+            <input
+              type="text"
+              id="userName"
+              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="Enter your name"
+            />
+
+            <label for="mailAddress">Your Email Address</label>
+            <input
+              type="email"
+              id="mailAddress"
+              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="user@user.com"
+            />
+
+            <label for="phoneNum">Your Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNum"
+              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="9999999999"
+            />
+
+            <label for="state">Where Do You Live?</label>
+            <select
+              id="state"
+              name="state"
+              class="mt-1 block w-full pl-3 pr-10 py-2 text-base hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+            >
+              <option value="">Select a state</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TS">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="CH">Chandigarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="DL">Delhi</option>
+              <option value="PY">Puducherry</option>
+            </select>
+
+            <div>
+              <fieldset class="border p-4">
+                <legend class="ml-4">Age</legend>
+
+                <div class="flex">
+                  <input type="radio" name="options" id="option1" />
+                  <label for="option1">15-20</label>
+
+                  <input type="radio" name="options" id="option2" />
+                  <label for="option2">20-30</label>
+
+                  <input type="radio" name="options" id="option3" />
+                  <label for="option3">31-40</label>
+
+                  <input type="radio" name="options" id="option4" />
+                  <label for="option4">41-50</label>
+
+                  <input type="radio" name="options" id="option5" />
+                  <label for="option5">Prefer not to say</label>
+                </div>
+              </fieldset>
+
+              <div class="flex flex-col">
+                <div>How would you rate your proficiency in coding</div>
+                <div>
+                  <input type="radio" id="option1" name="options" />
+                  <label for="option1">Beginner</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option2" name="options" />
+                  <label for="option2">Intermediate</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option3" name="options" />
+                  <label for="option3">Advance</label>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <div>Have you ever append in any coding contest?</div>
+                <div>
+                  <input type="radio" id="option1" name="options" />
+                  <label for="option1">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option2" name="options" />
+                  <label for="option2">No</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
