@@ -7,8 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="main-container" class="p-4 bg-green-500">
-      <div class="border rounded-md flex flex-col gap-4 p-6 bg-slate-300">
+    <div id="main-container" class="p-10 bg-green-500">
+      <div class="border rounded-md flex flex-col gap-4 p-6 bg-slate-100">
         <div>
           <h2 class="text-4xl font-bold">Survey Form</h2>
           <p>
@@ -20,116 +20,134 @@
         </div>
 
         <div>
-          <form action="" class="flex flex-col">
-            <label for="userName">Your Name</label>
-            <input
-              type="text"
-              id="userName"
-              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              placeholder="Enter your name"
-            />
+          <form action="" class="lg:flex lg:justify-between lg:px-8">
+            <section class="flex flex-col">
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                id="userName"
+                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter your name"
+              />
 
-            <label for="mailAddress">Your Email Address</label>
-            <input
-              type="email"
-              id="mailAddress"
-              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              placeholder="user@user.com"
-            />
+              <label for="mailAddress">Your Email Address</label>
+              <input
+                type="email"
+                id="mailAddress"
+                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="user@user.com"
+              />
 
-            <label for="phoneNum">Your Phone Number</label>
-            <input
-              type="tel"
-              id="phoneNum"
-              class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              placeholder="9999999999"
-            />
+              <label for="phoneNum">Your Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNum"
+                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="9999999999"
+              />
 
-            <label for="state">Where Do You Live?</label>
-            <select
-              id="state"
-              name="state"
-              class="mt-1 block w-full pl-3 pr-10 py-2 text-base hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
-            >
-              <option value="">Select a state</option>
-              <option value="AP">Andhra Pradesh</option>
-              <option value="AR">Arunachal Pradesh</option>
-              <option value="AS">Assam</option>
-              <option value="BR">Bihar</option>
-              <option value="CT">Chhattisgarh</option>
-              <option value="GA">Goa</option>
-              <option value="GJ">Gujarat</option>
-              <option value="HR">Haryana</option>
-              <option value="HP">Himachal Pradesh</option>
-              <option value="JK">Jammu and Kashmir</option>
-              <option value="JH">Jharkhand</option>
-              <option value="KA">Karnataka</option>
-              <option value="KL">Kerala</option>
-              <option value="MP">Madhya Pradesh</option>
-              <option value="MH">Maharashtra</option>
-              <option value="MN">Manipur</option>
-              <option value="ML">Meghalaya</option>
-              <option value="MZ">Mizoram</option>
-              <option value="NL">Nagaland</option>
-              <option value="OR">Odisha</option>
-              <option value="PB">Punjab</option>
-              <option value="RJ">Rajasthan</option>
-              <option value="SK">Sikkim</option>
-              <option value="TN">Tamil Nadu</option>
-              <option value="TS">Telangana</option>
-              <option value="TR">Tripura</option>
-              <option value="UP">Uttar Pradesh</option>
-              <option value="UT">Uttarakhand</option>
-              <option value="WB">West Bengal</option>
-              <option value="AN">Andaman and Nicobar Islands</option>
-              <option value="CH">Chandigarh</option>
-              <option value="DN">Dadra and Nagar Haveli</option>
-              <option value="DD">Daman and Diu</option>
-              <option value="LD">Lakshadweep</option>
-              <option value="DL">Delhi</option>
-              <option value="PY">Puducherry</option>
-            </select>
+              <label for="state">Where Do You Live?</label>
+              <select
+                id="state"
+                name="state"
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+              >
+                <option value="">Select a state</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TS">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="CH">Chandigarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="DL">Delhi</option>
+                <option value="PY">Puducherry</option>
+              </select>
 
-            <div>
-              <fieldset class="border p-4">
-                <legend class="ml-4">Age</legend>
+              <div>
+                <fieldset class="border p-4">
+                  <legend class="ml-4">Age</legend>
 
-                <div class="flex">
-                  <input type="radio" name="options" id="option1" />
-                  <label for="option1">15-20</label>
+                  <div class="flex gap-8">
+                    <div class="">
+                      <div>
+                        <input type="radio" name="options" id="option1" />
+                        <label for="option1">15-20</label>
+                      </div>
 
-                  <input type="radio" name="options" id="option2" />
-                  <label for="option2">20-30</label>
+                      <div>
+                        <input type="radio" name="options" id="option2" />
+                        <label for="option2">20-30</label>
+                      </div>
 
-                  <input type="radio" name="options" id="option3" />
-                  <label for="option3">31-40</label>
+                      <div>
+                        <input type="radio" name="options" id="option3" />
+                        <label for="option3">31-40</label>
+                      </div>
+                    </div>
 
-                  <input type="radio" name="options" id="option4" />
-                  <label for="option4">41-50</label>
+                    <div>
+                      <div>
+                        <input type="radio" name="options" id="option4" />
+                        <label for="option4">41-50</label>
+                      </div>
 
-                  <input type="radio" name="options" id="option5" />
-                  <label for="option5">Prefer not to say</label>
-                </div>
-              </fieldset>
+                      <div>
+                        <input type="radio" name="options" id="option5" />
+                        <label for="option5">Prefer not to say</label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
 
-              <div class="flex flex-col">
-                <div>How would you rate your proficiency in coding</div>
-                <div>
-                  <input type="radio" id="option1" name="options" />
-                  <label for="option1">Beginner</label>
-                </div>
+                <div class="flex flex-col">
+                  <div>How would you rate your proficiency in coding</div>
+                  <div>
+                    <input type="radio" id="option1" name="options" />
+                    <label for="option1">Beginner</label>
+                  </div>
 
-                <div>
-                  <input type="radio" id="option2" name="options" />
-                  <label for="option2">Intermediate</label>
-                </div>
+                  <div>
+                    <input type="radio" id="option2" name="options" />
+                    <label for="option2">Intermediate</label>
+                  </div>
 
-                <div>
-                  <input type="radio" id="option3" name="options" />
-                  <label for="option3">Advance</label>
+                  <div>
+                    <input type="radio" id="option3" name="options" />
+                    <label for="option3">Advance</label>
+                  </div>
                 </div>
               </div>
+            </section>
 
+            <section class="lg:mr-48">
               <div class="flex flex-col">
                 <div>Have you ever append in any coding contest?</div>
                 <div>
@@ -142,7 +160,49 @@
                   <label for="option2">No</label>
                 </div>
               </div>
-            </div>
+
+              <div class="flex flex-col gap-4">
+                <label for="area1"
+                  >Discuss what drives your passion for coding and outline your
+                  aspirations in the field.</label
+                >
+                <textarea
+                  name="area1"
+                  rows="4"
+                  id="area1"
+                  class="rounded-md w-full mb-2"
+                ></textarea>
+
+                <label for="area2"
+                  >What are some of the challenges you face while coding
+                  ?</label
+                >
+                <textarea
+                  name="area2"
+                  rows="4"
+                  id="area2"
+                  class="rounded-md w-full mb-2"
+                ></textarea>
+
+                <label for="area3"
+                  >Please list the Data Structures you have a strong
+                  understanding of.</label
+                >
+                <textarea
+                  name="area3"
+                  rows="4"
+                  id="area3"
+                  class="rounded-md w-full mb-2"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="border bg-blue-700 text-white p-2 rounded-md"
+                >
+                  Submit
+                </button>
+              </div>
+            </section>
           </form>
         </div>
       </div>
