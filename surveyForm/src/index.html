@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEVFsT3iUE2n8svrhpNxNVjQiQ8GGptHRvg&usqp=CAU" type="image/x-icon"> 
     <link href="./output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Survey Form</title>
   </head>
   <body class="bg-green-500">
-    <div id="main-container" class="flex justify-center px-32 items-center">
-      <div class=" rounded-md flex flex-col gap-4 p-6 bg-slate-100">
-        <div>
+    <div id="main-container" class="flex px-48 pt-4">
+      <div class=" rounded-md flex flex-col gap-4 p-6 bg-slate-50">
+        <div class="flex flex-col gap-2">
           <h2 class="text-4xl font-bold">Survey Form</h2>
-          <p>
+          <p class="leading-5">
             Feel Free To Answer The Questions Below Based On Your Own Experience
             And Opinion. If You Are Not Convenient In Answering A Particular
             Question Please Skip It By Answering "No". Every Answer Would Be
@@ -20,37 +21,39 @@
         </div>
 
         <div>
-          <form action="" class="flex px-10 justify-between flex-wrap">
+          <form action="" class="flex justify-between flex-wrap">
+
+            <!-- Left-container -->
             <section class="flex flex-col">
-              <label for="userName">Your Name</label>
+              <label for="userName" class="font-bold">Your Name</label>
               <input
                 type="text"
                 id="userName"
-                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                class="border py-2 rounded-md pl-3 clickInput"
                 placeholder="Enter your name"
               />
 
-              <label for="mailAddress">Your Email Address</label>
+              <label for="mailAddress" class="font-bold">Your Email Address</label>
               <input
                 type="email"
                 id="mailAddress"
-                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                class="border py-2 rounded-md pl-3 clickInput"
                 placeholder="user@user.com"
               />
 
-              <label for="phoneNum">Your Phone Number</label>
+              <label for="phoneNum" class="font-bold">Your Phone Number</label>
               <input
                 type="tel"
                 id="phoneNum"
-                class="border py-2 rounded-md pl-3 hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                class="border py-2 rounded-md pl-3 clickInput"
                 placeholder="9999999999"
               />
 
-              <label for="state">Where Do You Live?</label>
+              <label for="state" class="font-bold">Where Do You Live?</label>
               <select
                 id="state"
                 name="state"
-                class="mt-1 block w-full pl-3 pr-10 py-2 text-base hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base clickInput border rounded-md"
               >
                 <option value="">Select a state</option>
                 <option value="AP">Andhra Pradesh</option>
@@ -92,77 +95,78 @@
               </select>
 
               <div>
-                <fieldset class="border p-4">
-                  <legend class="ml-4">Age</legend>
+                <fieldset class="border rounded-md hover:border-gray-300 p-4">
+                  <legend class="ml-4 font-bold">Age</legend>
 
                   <div class="flex gap-8">
                     <div class="">
                       <div>
-                        <input type="radio" name="options" id="option1" />
-                        <label for="option1">15-20</label>
+                        <input type="radio" name="age" id="age1" />
+                        <label for="age1">15-20</label>
                       </div>
 
                       <div>
-                        <input type="radio" name="options" id="option2" />
-                        <label for="option2">20-30</label>
+                        <input type="radio" name="age" id="age2" />
+                        <label for="age2">20-30</label>
                       </div>
 
                       <div>
-                        <input type="radio" name="options" id="option3" />
-                        <label for="option3">31-40</label>
+                        <input type="radio" name="age" id="age3" />
+                        <label for="age3">31-40</label>
                       </div>
                     </div>
 
                     <div>
                       <div>
-                        <input type="radio" name="options" id="option4" />
-                        <label for="option4">41-50</label>
+                        <input type="radio" name="age" id="age4" />
+                        <label for="age4">41-50</label>
                       </div>
 
                       <div>
-                        <input type="radio" name="options" id="option5" />
-                        <label for="option5">Prefer not to say</label>
+                        <input type="radio" name="age" id="age5" />
+                        <label for="age5">Prefer not to say</label>
                       </div>
                     </div>
                   </div>
                 </fieldset>
 
                 <div class="flex flex-col">
-                  <div>How would you rate your proficiency in coding</div>
+                  <div class="font-bold">How would you rate your proficiency in coding</div>
                   <div>
-                    <input type="radio" id="option1" name="options" />
-                    <label for="option1">Beginner</label>
+                    <input type="radio" id="level1" name="level" />
+                    <label for="level1">Beginner</label>
                   </div>
 
                   <div>
-                    <input type="radio" id="option2" name="options" />
-                    <label for="option2">Intermediate</label>
+                    <input type="radio" id="level2" name="level" />
+                    <label for="level2">Intermediate</label>
                   </div>
 
                   <div>
-                    <input type="radio" id="option3" name="options" />
-                    <label for="option3">Advance</label>
+                    <input type="radio" id="level3" name="level" />
+                    <label for="level3">Advance</label>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section class="px-10">
+            <!-- Right-container -->
+            <section class="">
               <div class="flex flex-col">
-                <div>Have you ever append in any coding contest?</div>
+                <div class="font-bold">Have you ever append in any coding contest?</div>
                 <div>
-                  <input type="radio" id="option1" name="options" />
-                  <label for="option1">Yes</label>
+                  <input type="radio" id="yes" name="options" />
+                  <label for="yes">Yes</label>
                 </div>
 
                 <div>
-                  <input type="radio" id="option2" name="options" />
-                  <label for="option2">No</label>
+                  <input type="radio" id="no" name="options" />
+                  <label for="no">No</label>
                 </div>
               </div>
 
               <div class="flex flex-col gap-4">
-                <label for="area1"
+                <label for="area1" class="font-bold"
                   >Discuss what drives your passion for coding and outline your
                   aspirations in the field.</label
                 >
@@ -170,10 +174,10 @@
                   name="area1"
                   rows="3"
                   id="area1"
-                  class="rounded-md w-full mb-2"
+                  class="clickTextarea"
                 ></textarea>
 
-                <label for="area2"
+                <label for="area2" class="font-bold"
                   >What are some of the challenges you face while coding
                   ?</label
                 >
@@ -181,10 +185,10 @@
                   name="area2"
                   rows="3"
                   id="area2"
-                  class="rounded-md w-full mb-2"
+                  class="clickTextarea"
                 ></textarea>
 
-                <label for="area3"
+                <label for="area3" class="font-bold"
                   >Please list the Data Structures you have a strong
                   understanding of.</label
                 >
@@ -192,12 +196,12 @@
                   name="area3"
                   rows="3"
                   id="area3"
-                  class="rounded-md w-full mb-2"
+                  class="clickTextarea"
                 ></textarea>
 
                 <button
                   type="submit"
-                  class="border bg-blue-700 text-white p-2 rounded-md"
+                  class="border bg-blue-700 hover:opacity-90 text-white p-2 rounded-md"
                 >
                   Submit
                 </button>

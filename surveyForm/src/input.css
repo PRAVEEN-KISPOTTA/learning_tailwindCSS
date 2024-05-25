@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .clickInput{
+        @apply hover:border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+    }
+
+    .clickTextarea{
+        @apply rounded-md w-full outline-none border hover:border-gray-300 focus:border-blue-600
+    }
+}
